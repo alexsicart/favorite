@@ -1,0 +1,22 @@
+.pair {
+  display: flex;
+}
+
+app-movie {
+  flex: 1;
+  text-align: center
+}
+
+.favorites {
+  margin-top: 10px;
+  height:150px;
+  width: 100vw;
+  display: flex;
+}
+
+.favorites .favorite-movie {
+  height:150px;
+  width: 100px;
+  margin-right: 10px;
+  background-color: blue;
+}

@@ -1,0 +1,10 @@
+<h1>Pick your favourite</h1>
+<div *ngIf="pairs.length > 0" class='pair'>
+  <app-movie [movie]="pairs[index][0]" (moviePicked)="movieSelected(0)"></app-movie>
+  <app-movie [movie]="pairs[index][1]" (moviePicked)="movieSelected(1)"></app-movie>
+</div>
+<div class="favorites">
+  <div class="favorite-movie" *ngFor="let movie of favorites">
+    <app-favorite-movie [movie]="movie"></app-favorite-movie>
+  </div>
+</div>
